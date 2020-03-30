@@ -1,0 +1,79 @@
+h1, h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.calculator {
+    width: 400px;
+    /* height: 500px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.calculator-screen {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: right;
+    border-radius: 20px;
+    border: 2px solid grey;
+    cursor: default;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.calculator hr {
+    height: 1px;
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 20px;
+}
+
+.calculator-buttons button {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    transition-duration: 0.6s;
+}
+
+.calculator-buttons button:hover {
+    border: 2px solid black;
+    background-color: #DCDCDC;
+}
+
+.calculator-buttons .equals {
+    grid-column: 5;
+    grid-row: 2 / span 4;
+    background-color: lightgreen;
+    color: black;
+}
+
+.calculator-buttons .equals:hover {
+    background-color: limegreen;
+}
+
+.calculator-buttons .operator {
+    background-color: #ffa600;
+}
+
+.calculator-buttons .operator:hover {
+    background-color: darkgoldenrod;
+}
