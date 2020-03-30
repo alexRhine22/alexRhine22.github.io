@@ -1,0 +1,64 @@
+
+h1, h2 {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+/****************************************************************************
+clear canvas */
+:root {
+	--grid-cols: 0; /* number of columns in grid*/
+	--grid-rows: 0;	/* number of rows in grid */
+	--cell-size: 0px; /* width and height of square cell in grid */
+}
+
+#container {
+	margin: auto;
+	display: grid;
+	height: 960px;
+	width: 960px; 
+	grid-template-rows: repeat(var(--grid-rows), var(--cell-size)); /* create "x" amount of rows based off of variable --grid--rows */
+	grid-template-columns: repeat(var(--grid-cols), var(--cell-size)); /* create "x" amount of columns based off of variable --grid--cols */
+	border: solid; /* border of grid */
+}
+  
+.grid-item {
+	border: 1px solid #ddd; /* border of cell */
+}
+
+.default-color-grid-item {
+	border: 1px solid black; /* border of cell */
+	background-color: black;
+}
+
+.random-color {
+	border: 1px solid black; /* border of cell */
+	background-color: black;
+}
+
+/****************************************************************************
+clear canvas button*/
+.wrapper { 
+    float:left;
+    width:100%;
+    text-align:center;
+}
+
+/* style buttons */
+.button {
+	display:inline-block;
+	margin-bottom: 20px;
+    border: none;
+	border-radius: 8px; /* rounds buttons */
+	font-family: sans-serif;
+	font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px solid white;
+    transition-duration: 0.4s; 
+}
+
+/* on button hover give buttons black outline */
+.button:hover {
+    border: 2px solid #555555; 
+}
