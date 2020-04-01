@@ -1,2 +1,3 @@
 # alexRhine22.github.io
-wow!
+My github website.
+Includes links to completed projects from The Odin Project's [curriculum](https://www.theodinproject.com/tracks/2)
