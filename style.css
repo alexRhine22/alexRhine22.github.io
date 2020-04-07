@@ -27,6 +27,7 @@ font sizes */
 
 .title--font-size-md {
     font-size: 30px;
+    font-weight: 600;
 }
 
 .title--font-size-lg {
@@ -38,6 +39,10 @@ font sizes */
 colors */
 .text-color--green {
     /* color: #00887a; */
+}
+
+.bg-color--grey {
+    background-color: #aaa;
 }
 
 .bg-color--white {
@@ -68,7 +73,13 @@ side bar */
     width: 310px;
     position: fixed;
     color: var(--color-white);
-    /* border-right: 6px solid var(--color-dark-blue); */
+}
+
+.sidebar hr {
+    height: 5px; 
+    background: grey; 
+    border: none;
+    border-radius: 5px;
 }
 
 .sidebar img {
@@ -99,6 +110,11 @@ div.content {
     padding: 1px 20px;
 }
 
+.project-heading {
+    margin-left: 350px;
+    padding: 30px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -108,7 +124,7 @@ div.content {
 
 @media screen and (max-width: 700px) {
     .sidebar {
-    padding: 0px;
+    padding-left: 0;
     width: 100%;
     height: auto;
     position: relative;
@@ -129,6 +145,10 @@ div.content {
     .sidebar hr {
         width: 90%;
     }
+    
+    .project-heading {
+        margin: 0 0;
+    }
 
     .grid-container {
         display: grid;
@@ -146,6 +166,4 @@ project  */
     padding-bottom: 5px;
     margin-bottom: 30px;
     border-radius: 20px;
-    /* background-color: #5cdb95; */
-    /* border: 5px solid #05386b; */
 }
