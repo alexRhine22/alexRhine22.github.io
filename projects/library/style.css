@@ -1,0 +1,143 @@
+h1, h2 , h3{
+    text-align: center;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+body {
+    margin: 0 20px;
+}
+
+.form-toggle__button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #87dfee;
+    transition-duration: 0.3s;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.form-toggle__button:hover {
+    background-color: #7eccd9;
+}
+
+.book-adder {
+    display: none; /* Hides form on page load*/
+}
+
+.book-adder.active {
+    display: block;
+    padding: 30px 50px;
+    background: #f0e8e8;
+    border-radius: 10px;
+    outline: none;
+    font-family: sans-serif;   
+}
+
+.book-adder.active p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.book-adder.active input[type=text], 
+input[type=number], input[type=submit], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.book-adder.active input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+
+.radio-label {
+    display: inline-block;
+    text-align: center;
+}
+
+.book-adder.active input[type=submit]:hover {
+    background-color: #52A056;
+}
+
+table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "First Name"; }
+	td:nth-of-type(2):before { content: "Last Name"; }
+	td:nth-of-type(3):before { content: "Job Title"; }
+	td:nth-of-type(4):before { content: "Favorite Color"; }
+	td:nth-of-type(5):before { content: "Wars of Trek?"; }
+	td:nth-of-type(6):before { content: "Secret Alias"; }
+	td:nth-of-type(7):before { content: "Date of Birth"; }
+	td:nth-of-type(8):before { content: "Dream Vacation City"; }
+	td:nth-of-type(9):before { content: "GPA"; }
+	td:nth-of-type(10):before { content: "Arbitrary Data"; }
+}
