@@ -1,117 +1,151 @@
-body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-}
-  
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 350px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    border-right: 3px solid lightgrey;
-}
-  
-.sidebar h2 {
-	padding-left: 30px;
-	font-size: 40px;
-    overflow: auto;
+:root {
+    --color-white: #edf5e1;
+    --color-green: #5cdb95;
+    --color-light-green: #8ee4af;
+    --color-light-blue: #379683;
+    --color-dark-blue: #05386b;
 }
 
-.sidebar hr {
-	text-align: left;
-	width: 82%;
-    margin-left: 30px;
-    margin-top: 30px;
-	margin-bottom: 30px;
-	overflow: auto;
+.center-text {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/****************************************************************************
+font sizes */
+.title--font-size-sm {
+    font-size: 20px;
+}
+
+.title--font-size-mds {
+    font-size: 25px;
+}
+
+.title--font-size-md {
+    font-size: 30px;
+}
+
+.title--font-size-lg {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/****************************************************************************
+colors */
+.text-color--green {
+    /* color: #00887a; */
+}
+
+.bg-color--white {
+    background-color: var(--color-white);
+}
+
+.bg-color--blue {
+    background-color: var(--color-dark-blue);
+}
+
+.bg-color--light-blue {
+    background-color: var(--color-light-blue);
+}
+
+.bg-color--green {
+    background-color: var(--color-green);
+}
+
+.bg-color--light-green {
+    background-color: var(--color-light-green);
+}
+/****************************************************************************
+side bar */
+.sidebar {
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+    width: 310px;
+    position: fixed;
+    color: var(--color-white);
+    /* border-right: 6px solid var(--color-dark-blue); */
 }
 
 .sidebar img {
-	margin-left: 30px;
-	margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    color: var(--color-swamp);
 	width: 200px;
 	height: 230px;
-	border-radius: 15%;
-	overflow: auto;
+    border-radius: 15%;
 }
 
 .sidebar a {
     display: block;
     color: black;
-    padding: 20px;
-    text-align: center;
-	text-decoration: none;
-	width: 70%;
-	margin-left: 30px;
+    font-size: 25px;
+    padding: 20px 0;
+    text-decoration: none;
+    color: var(--color-white);
 }
    
 .sidebar a.active {
-	width: 70%;
-	margin-left: 30px;
-    background-color: #555;;
-	color: white;
     text-decoration: underline;
-    border: 5px #f1f1f1;
 }
 
-.sidebar a.active:hover {
-    background-color: #444;
-}
-
-.sidebar a:hover:not(.active) {
-    background-color: tan;
-    color: black;
-}
-  
 div.content {
     margin-left: 350px;
-    padding: 1px 16px;
+    padding: 1px 20px;
 }
 
-div.content h2 {
-    font-size: 40px;
-    height: 25px;
-}
-
-div.content h3 {
-    font-size: 20px;
-    color: #555;
-}
-
-div.content h4 {
-    font-size: 30px;
-    text-align: center;
-}
-
-div.content .project {
-    background-color: lightblue;
-    border-left: 4px solid darkblue;
-    padding-left: 10px;
-    padding-top: 2px;
-    padding-bottom: 5px;
-}
-
-div.content .project h5{
-    font-size: 16px;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 700px) {
     .sidebar {
+    padding: 0px;
     width: 100%;
     height: auto;
     position: relative;
     border: 0;
+    border-bottom: 4px solid var(--color-black); 
     }
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
-}
-  
-@media screen and (max-width: 400px) {
-    .sidebar a {
-    text-align: center;
-    float: none;
+
+    .sidebar {
+        padding-top: 20px;
     }
+
+    .sidebar a {
+        float: none;
+    }
+
+    .sidebar hr {
+        width: 90%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        padding: 0;
+    }
+}
+
+/****************************************************************************
+project  */
+.project {
+    border: 4px solid var();
+    padding: 0 20px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    /* background-color: #5cdb95; */
+    /* border: 5px solid #05386b; */
 }
