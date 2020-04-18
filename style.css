@@ -173,6 +173,14 @@ div.content {
     .panel {
         padding: 0 35px;
     }
+
+    .accordion:hover {
+        color: black;
+    }
+    
+    .accordion:hover.active {
+        color: black;
+    }
 }
 
 /****************************************************************************
@@ -201,10 +209,18 @@ project  */
     transition: 0.4s;
 }
 
-.accordion.active, .accordion:hover {
+.accordion.active {
     background-color: #ccc; 
 }
-  
+
+.accordion:hover {
+    color: rgb(70, 70, 70);
+}
+
+.accordion:hover.active {
+    color: rgb(70, 70, 70);
+}
+
 .panel {
     font-size: 18px;
     padding: 0 10px;
