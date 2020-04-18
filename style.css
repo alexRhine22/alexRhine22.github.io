@@ -133,13 +133,6 @@ div.content {
     padding: 30px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 20px;
-    padding: 10px;
-}
-
 @media screen and (max-width: 700px) {
     .sidebar {
     padding-left: 0;
@@ -166,13 +159,6 @@ div.content {
     
     .project-heading {
         margin: 0 0;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-column-gap: 0;
-        padding: 0;
     }
 
     .project {
