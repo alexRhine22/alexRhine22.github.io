@@ -229,6 +229,10 @@ project  */
     margin: 0 25px;
 }
 
+.panel.active {
+    display: block;
+}
+
 .carrot {
     border: solid black;
     border-width: 0 3px 3px 0;
@@ -243,10 +247,6 @@ project  */
 .carrot.active {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-}
-
-.panel.active {
-    display: block;
 }
 
 .no-select {
