@@ -185,8 +185,14 @@ div.content {
 
 /****************************************************************************
 project  */
-.line {
+.blue-line {
     border-bottom: 4px solid var(--color-dark-blue);
+    width: 30%;
+    margin: 0 auto 30px;
+}
+
+.red-line {
+    border-bottom: 4px solid red;
     width: 30%;
     margin: 0 auto 30px;
 }
