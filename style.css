@@ -245,10 +245,6 @@ project  */
     -webkit-transform: rotate(-135deg);
 }
 
-.panel {
-    display: none;
-}
-
 .panel.active {
     display: block;
 }
