@@ -93,6 +93,10 @@ SIDE BAR */
     color: var(--color-white);
 }
 
+.sidebar h2 {
+    margin-bottom: 5px;
+}
+
 .sidebar hr {
     height: 5px; 
     background: grey; 
@@ -121,6 +125,23 @@ SIDE BAR */
    
 .sidebar a.active {
     text-decoration: underline;
+}
+
+.social {
+    padding-top: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.social a {
+    padding: 0 20px;
+    font-size: 36px;
+    transition-duration: 0.4s;
+}
+
+.social a:hover {
+    color: var(--color-light-green);
 }
 
 div.content {
