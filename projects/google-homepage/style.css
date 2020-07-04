@@ -1,0 +1,138 @@
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
+/**
+*
+* Globals
+*
+*/
+body {
+  margin: 0;
+}
+
+/**
+*
+* Google logo
+*
+*/
+img {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 180px;
+}
+
+/**
+*
+* google buttons
+*
+*/
+.wrapper {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+/* style buttons */
+.button {
+  border-radius: 8px; /* rounds buttons */
+  border: 2px solid var(--white);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  margin-top: 40px;
+  outline: none;
+  padding: 10px 20px;
+  transition-duration: 0.4s;
+}
+
+/* on button hover give buttons black outline */
+.button:hover {
+  border: 2px solid #555555;
+}
+
+/****************************************************************************
+google top nav*/
+.top-nav {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+/* top nav links align left */
+.top-nav a.left {
+  color: var(--black);
+  float: left;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* top nav links align right */
+.top-nav a.right {
+  color: var(--black);
+  float: right;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* on hover underline links */
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+/****************************************************************************
+google bottom nav*/
+.footer-nav {
+  background-color: #e8e8e8;
+  bottom: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+/* bottom nav links align left */
+.footer-nav a.left {
+  color: var(--black);
+  float: left;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* bottom nav links align right */
+.footer-nav a.right {
+  color: var(--black);
+  float: right;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* on hover underline links */
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/****************************************************************************
+google search bar*/
+.search-bar {
+  border-radius: 25px;
+  border: 2px solid darkgray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  padding: 15px;
+  transition-duration: 0.4s;
+}
+
+.search-bar:hover {
+  border: 2px solid lightgray;
+}
